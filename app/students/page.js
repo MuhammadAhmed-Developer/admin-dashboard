@@ -13,7 +13,7 @@ import {
 } from "firebase/firestore";
 import { db } from "@/config/firebase";
 
-export default function page() {
+export default function Students() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalOpenedit, setIsModalOpenedit] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);

@@ -18,16 +18,16 @@ export default function TopBar({ showNav, setShowNav }) {
         showNav ? "pl-56" : ""
       }`}
     >
-      <div className="pl-4 md:pl-16">
+      <div className="pl-4 md:pl-16 text-white">
         <Bars3CenterLeftIcon
-          className="h-8 w-8 text-gray-700 cursor-pointer"
+          className="h-8 w-8 text-white cursor-pointer"
           onClick={() => setShowNav(!showNav)}
         />
       </div>
       <div className="flex items-center pr-4 md:pr-16">
         <Popover className="relative">
           <Popover.Button className="outline-none mr-5 md:mr-8 cursor-pointer text-gray-700">
-            <BellIcon className="h-6 w-6" />
+            <BellIcon className="text-white h-6 w-6" />
           </Popover.Button>
           <Transition
             as={Fragment}
@@ -114,10 +114,10 @@ export default function TopBar({ showNav, setShowNav }) {
                   alt="profile picture"
                 />
               </picture>
-              <span className="hidden md:block font-medium text-gray-700">
+              <span className="hidden md:block font-medium text-white ">
                 Usman
               </span>
-              <ChevronDownIcon className="ml-2 h-4 w-4 text-gray-700" />
+              <ChevronDownIcon className=" text-white ml-2 h-4 w-4" />
             </Menu.Button>
           </div>
           <Transition

@@ -7,6 +7,7 @@ import { PiGraphThin } from 'react-icons/pi'
 import { VscGraph } from 'react-icons/vsc'
 // import { BarChart } from '@mui/x-charts/BarChart';
 import { Doughnut } from 'react-chartjs-2';
+import Image from 'next/image';
 export default function Headercard() {
   const [student, setstudent] = useState([]);
   const [courses, setcourses] = useState([]);
@@ -127,9 +128,7 @@ export default function Headercard() {
         </div>
       </div>
       <div className="grid col-1 bg-white h-96 shadow-sm mb-20">
-        <img src="/graph.png" alt="" />
-
-      
+        <Image src="/graph.png" alt="graph" height={100} width={1000}/>
       </div>
     </>
   )

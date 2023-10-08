@@ -19,9 +19,9 @@ export default function Layout({ children }) {
   }
 
   useEffect(() => {
-    if (typeof window != undefined) {
-      addEventListener("resize", handleResize);
-    }
+    // if (typeof window != undefined) {
+    //   addEventListener("resize", handleResize);
+    // }
 
     return () => {
       removeEventListener("resize", handleResize);

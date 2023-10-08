@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import React, { useEffect, useState } from "react";
 import { FaEdit, FaTrash } from "react-icons/fa";
 import {
@@ -13,7 +13,7 @@ import {
 } from "firebase/firestore";
 import { db } from "@/config/firebase";
 
-export default function Students() {
+export default function page() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalOpenedit, setIsModalOpenedit] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);

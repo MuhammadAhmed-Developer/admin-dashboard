@@ -22,8 +22,8 @@ export default function Attendance() {
     try {
       setLoading(true);
       const attendanceCollection = collection(db, 'students');
-      const q = query(attendanceCollection, where('selectedCourse', '==', 'Web and Mobile developnment'));
-      const docs = await getDocs(q);
+      // const q = query(attendanceCollection, where('selectedCourse', '==', 'Web and Mobile developnment'));
+      const docs = await getDocs(attendanceCollection);
       const studentData = [];
       docs.forEach((doc) => {
         studentData.push({

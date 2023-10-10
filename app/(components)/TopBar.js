@@ -115,7 +115,7 @@ export default function TopBar({ showNav, setShowNav }) {
                 />
               </picture>
               <span className="hidden md:block font-medium text-white ">
-                Usman
+                Muhammad Ahmed
               </span>
               <ChevronDownIcon className=" text-white ml-2 h-4 w-4" />
             </Menu.Button>
